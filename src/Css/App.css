@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+:root{
+    --green:#17A589 ;
+    --black:#130f40;
+    --light-color:#1C2833 ;
+    --dark:#E5E8E8;
+    --white:#fff;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+    --border:.2rem solid rgba(0,0,0,.1);
+    --outline:.1rem solid rgba(5, 223, 194, 0.849);
+    --outline-hover:.2rem solid var(--green);
+}
+*{
+    font-family: Poppins, monospace;
+}
+
+.header nav ul li{
+    display: inline-block;
+}
+.header{
+    z-index: 100000;
+    justify-content: space-between;
+
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background: #eee;
+    overflow-x: hidden;
+    position: relative;
+    height: 100%;
+}
+.produit img{
+    height: 30rem;
+}
+.produit{
+    outline:1px solid orange;
+    outline-offset:-1rem ;
+}
+.produit:hover{
+    outline-offset: 0rem;
+    transform:translateZ(20px);
+}
+.icons div{
+    background: #eeeeee;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    height: 4.5rem;
+    width: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu.active{
+    right:1rem;
+    transition: .4s linear
+}
+.search-form.active{
+    right: 1rem;
+    z-index: 1000;
+    transition: .4s linear
+}
+.login-form.active{
+    right: 1rem;
+    z-index: 1000;
+    transition: .4s linear;
+}
+.login-form{
+    width:35rem;
+    position: absolute;
+    right:-120%;
+    top: 108%;
+}
+.search-form{
+    position: absolute;
+    top: 108%;
+    right:-180%;
+    background: white;
+    transition: .4s linear;
+    width: 40rem;
+    outline:0.1rem solid orange;
+}
+.banner-container{
+    height:400px;
+}
+.swiper-banner{
+    height:100%;
+}
+@media (max-width: 576px) {
+    .menu{
+        position: absolute;
+        top: 108%;
+        right:-120%;
+        background: white;
+        width: 20rem;
+        border-radius: 0.5rem;
+        justify-content: center;
+    }
+    .banner-container{
+        height:400px;
+        background:red;
+    }
+    .swiper-banner{
+        height:55%;
+    }
+    .second-banner{
+        height:40%;
+        margin-right:0;
+        justify-content:space-between;
+        margin-top:10px;
+    }
+    .banner-message h4{
+        font-size:16px;
+    }
+    .new-arrival,off-25{
+        height:100%;
+    }
+    .new-arrival{
+        margin-right:10px;
+    }
+}
+.pp-img{height: 30rem;}
